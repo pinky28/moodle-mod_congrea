@@ -115,4 +115,26 @@ $capabilities = array(
             'manager' => CAP_ALLOW
         )
     ),
+    //Ability to attach, publish
+    'mod/congrea:managequiz' => array(
+    	'riskbitmask' => RISK_SPAM,
+        'captype' => 'write',
+        'contextlevel' => CONTEXT_MODULE,
+        'archetypes' => array(
+            'teacher' => CAP_ALLOW,
+            'editingteacher' => CAP_ALLOW,
+            'manager' => CAP_ALLOW
+        )
+    ),
+    //Ability to manage poll data
+    'mod/congrea:managepoll' => array(
+    	'riskbitmask' => RISK_SPAM,
+        'captype' => 'write',
+        'contextlevel' => CONTEXT_MODULE,
+        'archetypes' => array(
+            'teacher' => CAP_ALLOW,
+            'editingteacher' => CAP_ALLOW,
+            'manager' => CAP_ALLOW
+        )
+    ),
 );
